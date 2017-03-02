@@ -1,0 +1,49 @@
+$(function(){
+	$(".shareSomething").mouseover(function(){
+		$(".LinkWay").css("display","inline-block");
+		$(this).css("display","none");
+	}).mouseout(function(){
+		$(this).css("display","inline-block");
+		$(".LinkWay").css("display","none");
+	});
+	$(".LinkWay").mouseover(function(){
+		$(".shareSomething").css("display","none");
+		$(this).css("display","inline-block");
+	}).mouseout(function(){
+		$(this).css("display","none");
+		$(".shareSomething").css("display","inline-block");
+	});
+	$(".writeTravel").mouseover(function(){
+		$(".diaryTime").css("background-position","0px -2594px");
+	}).mouseout(function(){
+		$(".diaryTime").css("background-position","0px -2560px");
+	});
+	$(".display").click(function(){
+		$(".homePage").hide();
+		$(".mainPaper").show();
+	});
+	$(".back").click(function(){
+		$(".homePage").show();
+		$(".mainPaper").hide();
+	});
+	$(".linkAnother").mouseover(function(){
+		$(this).css("width","170px");
+		$(".authorName").css("width","170px");
+	}).mouseout(function(){
+		$(this).css("width","150px");
+		$(".authorName").css("width","150px");
+	});
+	$(".d-day").click(function(){
+		$(".fontColor").removeClass("fontColor");
+		$(".current").removeClass("current");
+		$(this).addClass("fontColor");
+	});
+	$(".d-node").click(function(){
+		$(".fontColor").removeClass("fontColor");
+		$(".current").removeClass("current");
+		$(this).addClass("current");
+	});
+	$("addDays").click(function(){
+		
+	});
+});
